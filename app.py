@@ -1,3 +1,5 @@
+
+
 import streamlit as st
 from dotenv import load_dotenv
 
@@ -5,7 +7,7 @@ from services.rag_service import (
     process_documents,
     generate_answer
 )
-
+st.write("Secrets:", list(st.secrets.keys()))
 load_dotenv()
 
 st.set_page_config(
